@@ -1,13 +1,11 @@
 var http = require('http');
 
-listener =(req,res) =>{
-   
-}
+var ip = '192.168.0.106';
 
 var server = http.createServer((req,res)=>{
     res.writeHead(200,{
         'Content-Type': 'text/plain'
     });
-    res.end('hello nigga');
+    res.end('hello gangsta');
 });
-server.listen(3000,'localhost');
+server.listen(3000,ip || 'localhost');
